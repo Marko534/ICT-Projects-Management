@@ -2,38 +2,37 @@
 
 ## Table of Content
 
-- [[#Risk Identification|Risk Identification]]
-	- [[#Risk Identification#1. Data Privacy Breach|1. Data Privacy Breach]]
-	- [[#Risk Identification#2. Technical Reliability Concerns|2. Technical Reliability Concerns]]
-	- [[#Risk Identification#3. Accessibility And Usability Problems|3. Accessibility And Usability Problems]]
-	- [[#Risk Identification#4. Content Quality Issues|4. Content Quality Issues]]
-	- [[#Risk Identification#5. Authentication Failures|5. Authentication Failures]]
-	- [[#Risk Identification#6. Performance Degradation|6. Performance Degradation]]
-	- [[#Risk Identification#7. Algorithmic Bias|7. Algorithmic Bias]]
-	- [[#Risk Identification#8. Administrative Control Problems|8. Administrative Control Problems]]
-- [[#Qualitative Analysis of Identified Risks|Qualitative Analysis of Identified Risks]]
-	- [[#Qualitative Analysis of Identified Risks#Risk List|Risk List]]
-		- [[#Risk List#1. Data Privacy Breach|1. Data Privacy Breach]]
-		- [[#Risk List#2. Technical Reliability Concerns|2. Technical Reliability Concerns]]
-		- [[#Risk List#3. Accessibility and Usability Problems|3. Accessibility and Usability Problems]]
-		- [[#Risk List#4. Content Quality Issues|4. Content Quality Issues]]
-		- [[#Risk List#5. Authentication Failures|5. Authentication Failures]]
-		- [[#Risk List#6. Performance Degradation|6. Performance Degradation]]
-		- [[#Risk List#7. Algorithmic Bias|7. Algorithmic Bias]]
-		- [[#Risk List#8. Administrative Control Problems|8. Administrative Control Problems]]
-	- [[#Qualitative Analysis of Identified Risks#Risk Matrix|Risk Matrix]]
-- [[#Risk Management Plan for EduCards|Risk Management Plan for EduCards]]
-	- [[#Risk Management Plan for EduCards#High Priority Risks|High Priority Risks]]
-		- [[#High Priority Risks#1. Data Privacy Breach (P3, S3)|1. Data Privacy Breach (P3, S3)]]
-	- [[#Risk Management Plan for EduCards#Medium Priority Risks|Medium Priority Risks]]
-		- [[#Medium Priority Risks#2. Technical Reliability Concerns (P4, S2)|2. Technical Reliability Concerns (P4, S2)]]
-		- [[#Medium Priority Risks#4. Content Quality Issues (P3, S2)|4. Content Quality Issues (P3, S2)]]
-		- [[#Medium Priority Risks#5. Authentication Failures (P3, S2)|5. Authentication Failures (P3, S2)]]
-		- [[#Medium Priority Risks#7. Algorithmic Bias (P3, S2)|7. Algorithmic Bias (P3, S2)]]
-	- [[#Risk Management Plan for EduCards#Lower Priority Risks|Lower Priority Risks]]
-		- [[#Lower Priority Risks#3. Accessibility and Usability Problems (P4, S1)|3. Accessibility and Usability Problems (P4, S1)]]
-		- [[#Lower Priority Risks#6. Performance Degradation (P5, S1)|6. Performance Degradation (P5, S1)]]
-		- [[#Lower Priority Risks#8. Administrative Control Problems (P3, S1)|8. Administrative Control Problems (P3, S1)]]
+1. [Risk Identification](#risk-identification)
+	1. [1. Data Privacy Breach](#1-data-privacy-breach)
+	2. [2. Technical Reliability Concerns](#2-technical-reliability-concerns)
+	3. [3. Accessibility And Usability Problems](#3-accessibility-and-usability-problems)
+	4. [4. Content Quality Issues](#4-content-quality-issues)
+	5. [5. Authentication Failures](#5-authentication-failures)
+	6. [6. Performance Degradation](#6-performance-degradation)
+	7. [7. Algorithmic Bias](#7-algorithmic-bias)
+	8. [8. Administrative Control Problems](#8-administrative-control-problems)
+2. [Risk List](#risk-list)
+	1. [1. Data Privacy Breach](#1-data-privacy-breach)
+	2. [2. Technical Reliability Concerns](#2-technical-reliability-concerns)
+	3. [3. Accessibility and Usability Problems](#3-accessibility-and-usability-problems)
+	4. [4. Content Quality Issues](#4-content-quality-issues)
+	5. [5. Authentication Failures](#5-authentication-failures)
+	6. [6. Performance Degradation](#6-performance-degradation)
+	7. [7. Algorithmic Bias](#7-algorithmic-bias)
+	8. [8. Administrative Control Problems](#8-administrative-control-problems)
+	9. [Risk Matrix](#risk-matrix)
+3. [Risk Management Plan for EduCards](#risk-management-plan-for-educards)
+	1. [High Priority Risks](#high-priority-risks)
+		1. [1. Data Privacy Breach (P3, S3)](#1-data-privacy-breach-p3-s3)
+	2. [Medium Priority Risks](#medium-priority-risks)
+		1. [2. Technical Reliability Concerns (P4, S2)](#2-technical-reliability-concerns-p4-s2)
+		2. [4. Content Quality Issues (P3, S2)](#4-content-quality-issues-p3-s2)
+		3. [5. Authentication Failures (P3, S2)](#5-authentication-failures-p3-s2)
+		4. [7. Algorithmic Bias (P3, S2)](#7-algorithmic-bias-p3-s2)
+	3. [Lower Priority Risks](#lower-priority-risks)
+		1. [3. Accessibility and Usability Problems (P4, S1)](#3-accessibility-and-usability-problems-p4-s1)
+		2. [6. Performance Degradation (P5, S1)](#6-performance-degradation-p5-s1)
+		3. [8. Administrative Control Problems (P3, S1)](#8-administrative-control-problems-p3-s1)
 
 ## Risk Identification
 
@@ -88,53 +87,53 @@
 
 --- 
 
-## Qualitative Analysis of Identified Risks
+# Qualitative Analysis of Identified Risks
 
-### Risk List
+## Risk List
 
-#### 1. Data Privacy Breach
+### 1. Data Privacy Breach
 
 - **Probability**: P3
 - **Severity**: S3
 - **Risk Level**: Not that common but should be dealt with because sensitive student/teacher information.
 
-#### 2. Technical Reliability Concerns
+### 2. Technical Reliability Concerns
 
 - **Probability**: P4 (Likely)
 - **Severity**: S2 (Marginal)
 - **Risk Level**: Likely because a the program will have a lot of users but not that harmful since it only causes slowdowns.  
 
-#### 3. Accessibility and Usability Problems
+### 3. Accessibility and Usability Problems
 
 - **Probability**: P4 (Likely)
 - **Severity**: S1 (Negligible)
 - **Risk Level**: Acceptable but should be addressed to ensure inclusive.
 
-#### 4. Content Quality Issues
+### 4. Content Quality Issues
 
 - **Probability**: P3 (Possible)
 - **Severity**: S2 (Marginal)
 - **Risk Level**: Acceptable with human oversight of AI-generated content.
 
-#### 5. Authentication Failures
+### 5. Authentication Failures
 
 - **Probability**: P3 (Possible)
 - **Severity**: S2 (Marginal)
 - **Risk Level**: Acceptable with multiple authentication methods and monitoring.
 
-#### 6. Performance Degradation
+### 6. Performance Degradation
 
 - **Probability**: P5 (Certain)
 - **Severity**: S1 (Negligible)
 - **Risk Level**: Acceptable with proper capacity planning and performance optimization.
 
-#### 7. Algorithmic Bias
+### 7. Algorithmic Bias
 
 - **Probability**: P3 (Possible)
 - **Severity**: S2 (Marginal)
 - **Risk Level**: Acceptable with diverse training data and regular bias audits.
 
-#### 8. Administrative Control Problems
+### 8. Administrative Control Problems
 
 - **Probability**: P3 (Possible)
 - **Severity**: S1 (Negligible)
