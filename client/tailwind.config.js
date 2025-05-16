@@ -1,5 +1,9 @@
-module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}', './index.html'],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -14,6 +18,7 @@ module.exports = {
           700: '#1976d2',
           800: '#1565c0',
           900: '#0d47a1',
+          950: '#08316e',
         },
       },
       animation: {
@@ -37,7 +42,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
-};
+  plugins: [],
+}
