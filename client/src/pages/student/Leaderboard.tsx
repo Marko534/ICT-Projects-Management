@@ -64,14 +64,14 @@ const Leaderboard: React.FC = () => {
               {leaderboard.map(entry => (
                 <tr 
                   key={entry.id} 
-                  className={`${entry.student.username === user?.username ? 'bg-primary-50' : ''} hover:bg-gray-50 transition-colors`}
+                  className={`${entry.student_name === user?.username ? 'bg-primary-50' : ''} hover:bg-gray-50 transition-colors`}
                 >
                   <td className="px-6 py-4 whitespace-nowrap text-lg">
                     {getRankIcon(entry.rank)}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap font-medium">
-                    {entry.student.username} 
-                    {entry.student.username === user?.username && ' (You)'}
+                    {entry.student_name} 
+                    {entry.student_name === user?.username && ' (You)'}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap font-bold text-lg">
                     {entry.total_score}

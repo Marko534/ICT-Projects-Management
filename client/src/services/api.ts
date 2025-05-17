@@ -6,7 +6,7 @@ import {
   RegisterFormData,
 } from '../types';
 
-const API_URL = import.meta.env.VITE_API_URL || '/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
 // Set up axios with auth token
 export const setupAxios = (token: string): void => {

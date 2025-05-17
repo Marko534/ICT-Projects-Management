@@ -34,10 +34,8 @@ export interface StudySession {
 
 export interface LeaderboardEntry {
   id: number;
-  student: {
-    id: number;
-    username: string;
-  };
+  student: number;
+  student_name: string;
   total_score: number;
   total_sessions: number;
   rank: number;
