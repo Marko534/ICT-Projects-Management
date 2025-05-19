@@ -1,0 +1,24 @@
+# docker-compose.yml
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: educards-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: educards_db          # matches NAME
+      POSTGRES_USER: educards_user      # matches USER
+      POSTGRES_PASSWORD: admin          # matches PASSWORD
+    ports:
+      - "5432:5432"                     # host:container
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U educards_user"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:

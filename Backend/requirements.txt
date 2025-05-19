@@ -1,0 +1,37 @@
+# EduCards Requirements
+# Core
+Django>=4.2.0,<5.0.0
+djangorestframework>=3.14.0
+django-cors-headers>=4.0.0
+django-filter>=23.0.0
+
+# Database
+psycopg2-binary>=2.9.5
+
+# Authentication
+djangorestframework-simplejwt>=5.2.0
+
+# File Processing
+Pillow>=9.0.0
+PyPDF2>=3.0.0
+
+# OpenAI Integration
+openai>=1.0.0
+
+# Environment Management
+python-dotenv>=1.0.0
+
+# Export Functionality
+xlsxwriter>=3.0.0
+
+# Development & Testing
+pytest>=7.0.0
+pytest-django>=4.5.2
+coverage>=6.3.0
+
+# Deployment
+gunicorn>=21.0.0
+whitenoise>=6.4.0
+
+# Documentation
+drf-yasg>=1.21.0

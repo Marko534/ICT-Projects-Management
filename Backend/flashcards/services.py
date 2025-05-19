@@ -1,14 +1,14 @@
 import os
 import time
 import PyPDF2
-import openai
+from openai import OpenAI
 import json
 from django.conf import settings
 from documents.models import Document
 from .models import Flashcard
 
 # Configure OpenAI API
-openai.api_key = os.getenv('OPENAI_API_KEY')  # Set this in your environment variables
+client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 
 def extract_text_from_pdf(pdf_path):
@@ -42,11 +42,11 @@ def generate_flashcards(document_id, num_cards=10, difficulty='medium'):
     """
 
     # Call OpenAI API
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",  # Or "gpt-4" if available
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
         messages=[
             {"role": "system",
-             "content": "You are an educational assistant that creates high-quality flashcards for students."},
+            "content": "You are an educational assistant that creates high-quality flashcards for students."},
             {"role": "user", "content": prompt}
         ],
         max_tokens=1500,
